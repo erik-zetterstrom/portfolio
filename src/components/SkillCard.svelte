@@ -1,9 +1,5 @@
 <script lang="ts">
-    type SkillCardProperties = {
-        imageSource: string;
-        title: string;
-        body: string;
-    }
+    import { type SkillCardProperties } from "$lib/server/properties";
     let {skillCardProperties}: {skillCardProperties: SkillCardProperties} = $props();
 </script>
 
@@ -11,9 +7,9 @@
     <div class="card-image-div rounded-t-md p-1.5">
         <img class="card-image" src={skillCardProperties.imageSource} alt={"Bild till " + skillCardProperties.title} />
     </div>
-    <div class="card-body p-1.5 rounded-b-md bg-pink-300">
-        <h2 class=" text-xl font-bold">{skillCardProperties.title}</h2>
-        <p>{skillCardProperties.body}</p>
+    <div class="card-body p-2 rounded-b-md bg-pink-300">
+        <h2 style="font-size: 2cqb;" class="font-bold">{skillCardProperties.title}</h2>
+        <p style="font-size: 2cqb;">{skillCardProperties.body}</p>
     </div>
 </div>
 
@@ -22,6 +18,8 @@
         flex: 1;
         display: flex;
         flex-direction: column;
+        max-width: 300px;
+        min-height: 300px;
     }
     .card-image-div {
         background-color: orange;
@@ -31,6 +29,10 @@
         overflow: hidden;
         display: flex;
         justify-content: center;
+    }
+    .card-image {
+        min-height: 200px;
+        object-fit: contain;
     }
     .card-body {
         flex: 1 1;
