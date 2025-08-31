@@ -1,61 +1,91 @@
-<h1>Erik Zetterström - CV</h1>
-<div>
-    <p>Adress: Bagarfruvägen 29</p>
-    <p>Postadress: 128 67 Sköndal</p>
-    <p>Mobil: 073-518 41 92</p>
-    <p>Mejladress: erik@zetterstrom.cloud</p>
+<script>
+	import ContactInformation from "../../components/ContactInformation.svelte";
+	import SkillList from "../../components/SkillList.svelte";
+	import Timeline from "../../components/Timeline.svelte";
+
+</script>
+<div class="p-15">
+    <h2>Kontaktuppgifter</h2>
+    <ContactInformation
+        address={
+            {
+                street: "Bagarfruvägen",
+                houseNumber: "29",
+                postalCode: "128 67",
+                city: "Sköndal"
+            }
+        }
+        phoneNumer="073-518 41 92"
+        emailAddress="erik@zetterstrom.cloud"
+    />
+    <Timeline
+        title="Arbetslivserfarenhet"
+        items={
+            [
+                {
+                    time: "jan. 2024 -",
+                    title: "Techlead och backendutvecklare",
+                    subtitle: "FrontFlow, f.d. Violet Automation, Stockholm",
+                    body: ""
+                },
+                {
+                    time: "nov. 2023 - jan. 2024",
+                    title: "Backendutvecklare",
+                    subtitle: "FrontFlow, f.d. Violet Automation, Stockholm",
+                    body: ""
+                }
+                ,
+                {
+                    time: "mar. 2023 - jul. 2023",
+                    title: "Konsult inom backendutveckling och maskininlärning",
+                    subtitle: "HiQ, Stockholm",
+                    body: ""
+                },
+                {
+                    time: "mar. 2023 - maj. 2023",
+                    title: "Maskininlärningsingenjör",
+                    subtitle: "Pinpoint estimates, Stockholm",
+                    body: "Konsultuppdrag via HiQ"
+                },
+                {
+                    time: "jun. 2021 - sep. 2021",
+                    title: "Dataoperatör",
+                    subtitle: "Tobii, Stockholm",
+                    body: "Sommar- och deltidsjobb"
+                }
+            ]
+        }
+    />
+    <Timeline
+        title="Utbildning"
+        items={
+            [
+                {
+                    time: "feb. 2022 - jun. 2022",
+                    title: "Utbytesstudier",
+                    subtitle: "Budapest University of Technology and Economics, Budapest, Ungern",
+                    body: ""
+                },
+                {
+                    time: "aug. 2017 - jun. 2023",
+                    title: "Civilingenjörsutbildning i datateknik, master i maskininlärning",
+                    subtitle: "Kungliga Tekniska högskolan, Stockholm",
+                    body: ""
+                }
+            ]
+        }
+    />
+    <SkillList 
+        title="Kunskapsområden"
+        sections={[
+            {
+                category: "Programmerings- och övriga tekniska språk",
+                skills: ["Python", "Go", "Java", "Swift", "Javascript", "Typescript", "HTML", "CSS", "C", "SQL", "Prolog", "Haskel"]
+            },
+            {
+                category: "Ramverk och teknologier",
+                skills: ["Terraform", "AWS", "Docker", "REST-API:er", "Microsoft Graph", "GraphQL", "SO-AP", "Postgres", "SQL", "NoSQL", "Postman", "PyTorch", "VS Code", "SwiftUI", "XCode", "Ubuntu", "MongoDB", "Git", "Github"]
+            }
+        ]}
+    />
 </div>
-<h2>Utbildning</h2>
-<ul>
-    <li>
-        <div>
-            <p>Civilingenjörsutbildning i datateknik, master i maskininlärning - aug. 2017 - jun. 2023</p>
-            <p><i>Kungliga Tekniska högskolan, Stockholm</i></p>
-        </div>
-    </li>
-    <li>
-        <div>
-            <p>Utbytesstudier - Vårterminen 2022</p>
-            <p><i>Budapest University of Technology and Economics, Budapest, Ungern</i></p>
-        </div>
-    </li>
-</ul>
-<h2>Arbetslivserfarenhet</h2>
-<ul>
-    <li>
-        <div>
-            <p>Techlead, molnarkitekt och backendutvecklare - jan. 2024 - pågående</p>
-            <p><i>FrontFlow, f.d. Violet Automation, Stockholm</i></p>
-        </div>
-    </li>
-    <li>
-        <div>
-            <p>Backendutvecklare - nov. 2023 - jan. 2024</p>
-            <p><i>FrontFlow, f.d. Violet Automation, Stockholm</i></p>
-        </div>
-    </li>
-    <li>
-        <div>
-            <p>Konsult inom backendutveckling och maskininlärning - mar. 2023 - jul. 2023</p>
-            <p><i>HiQ, Stockholm</i></p>
-        </div>
-    </li>
-    <li>
-        <div>
-            <p>Maskininlärningsingenjör - uppdrag via HiQ - mar. 2023 - maj. 2023</p>
-            <p><i>Pinpoint estimates, Stockholm</i></p>
-        </div>
-    </li>
-    <li>
-        <div>
-            <p>Läxhjälp inom matematik, kemi, biologi och fysik - okt. 2017 - maj. 2022</p>
-            <p><i>My Academy, Stockholm</i></p>
-        </div>
-    </li>
-    <li>
-        <div>
-            <p>Dataoperatör (sommar- och deltidsjobb) - jun.2021 - sep. 2021</p>
-            <p><i>Tobii, Stockholm</i></p>
-        </div>
-    </li>
-</ul>
