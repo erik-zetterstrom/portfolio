@@ -4,8 +4,7 @@
 	import Timeline from "../../components/Timeline.svelte";
 
 </script>
-<div class="p-15">
-    <h2>Kontaktuppgifter</h2>
+<div class="cv">
     <ContactInformation
         address={
             {
@@ -19,44 +18,110 @@
         emailAddress="erik@zetterstrom.cloud"
     />
     <Timeline
-        title="Arbetslivserfarenhet"
+        title="Work experience"
         items={
             [
                 {
-                    time: "jan. 2024 -",
-                    title: "Techlead och backendutvecklare",
-                    subtitle: "FrontFlow, f.d. Violet Automation, Stockholm",
-                    body: ""
+                    title: "FrontFlow, Stockholm",
+                    sections: [
+                        {
+                            title: "Techlead",
+                            body: "Working as a teach lad and doing important stuff.",
+                            interval: {
+                                from: {
+                                    year: 2024,
+                                    month: "Jan"
+                                },
+                                to: null
+                            }
+                        },
+                        {
+                            title: "Backend developer",
+                            body: "Backend and shiii you know.",
+                            interval: {
+                                from: {
+                                    year: 2023,
+                                    month: "Nov"
+                                },
+                                to: {
+                                    year: 2024,
+                                    month: "Jan"
+                                }
+                            }
+                        }
+                    ]
                 },
                 {
-                    time: "nov. 2023 - jan. 2024",
-                    title: "Backendutvecklare",
-                    subtitle: "FrontFlow, f.d. Violet Automation, Stockholm",
-                    body: ""
+                    title: "HiQ, Stockholm",
+                    sections: [
+                        {
+                            title: "Machine Learning Engineer at Pinpoint Estimates",
+                            body: "Consultant assignment via HiQ.",
+                            interval: {
+                                from: {
+                                    year: 2023,
+                                    month: "Mar"
+                                },
+                                to: {
+                                    year: 2023,
+                                    month: "May"
+                                }
+                            }
+                        },
+                        {
+                            title: "Backend developer and Machine Learning consultant",
+                            body: "SOmehting",
+                            interval: {
+                                from: {
+                                    year: 2023,
+                                    month: "Mar"
+                                },
+                                to: {
+                                    year: 2023,
+                                    month: "Jul"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    title: "Tobii, Stockholm",
+                    sections: [
+                        {
+                            title: "Data operator",
+                            body: "Summer and part time job.",
+                            interval: {
+                                from: {
+                                    year: 2021,
+                                    month: "Jun"
+                                },
+                                to: {
+                                    year: 2021,
+                                    month: "Sep"
+                                }
+                            }
+                        }
+                    ]
                 }
-                ,
-                {
-                    time: "mar. 2023 - jul. 2023",
-                    title: "Konsult inom backendutveckling och maskininlärning",
-                    subtitle: "HiQ, Stockholm",
-                    body: ""
-                },
-                {
-                    time: "mar. 2023 - maj. 2023",
-                    title: "Maskininlärningsingenjör",
-                    subtitle: "Pinpoint estimates, Stockholm",
-                    body: "Konsultuppdrag via HiQ"
-                },
-                {
-                    time: "jun. 2021 - sep. 2021",
-                    title: "Dataoperatör",
-                    subtitle: "Tobii, Stockholm",
-                    body: "Sommar- och deltidsjobb"
-                }
+                // {
+                //     title: "Dataoperatör",
+                //     subtitle: "Tobii, Stockholm",
+                //     body: "Sommar- och deltidsjobb",
+                //     interval: {
+                //         from: {
+                //             year: 2021,
+                //             month: "Jun"
+                //         },
+                //         to: {
+                //             year: 2021,
+                //             month: "Sep"
+                //         }
+                //     }
+                // }
             ]
         }
     />
-    <Timeline
+    <!-- <Timeline
         title="Utbildning"
         items={
             [
@@ -74,8 +139,8 @@
                 }
             ]
         }
-    />
-    <SkillList 
+    /> -->
+    <!-- <SkillList 
         title="Kunskapsområden"
         sections={[
             {
@@ -87,5 +152,15 @@
                 skills: ["Terraform", "AWS", "Docker", "REST-API:er", "Microsoft Graph", "GraphQL", "SO-AP", "Postgres", "SQL", "NoSQL", "Postman", "PyTorch", "VS Code", "SwiftUI", "XCode", "Ubuntu", "MongoDB", "Git", "Github"]
             }
         ]}
-    />
+    /> -->
 </div>
+
+<style>
+    .cv {
+        padding-top: 2rem;
+        padding-left: clamp(2rem, 3vw, 3rem);
+        padding-right: clamp(2rem, 3vw, 3rem);
+        display: flex;
+        flex-direction: column;
+    }
+</style>
