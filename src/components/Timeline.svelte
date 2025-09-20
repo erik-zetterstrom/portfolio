@@ -37,7 +37,7 @@
             <li class="">
                 <h2 class="text-size-cv-2 pt-3">{item.title}</h2>
                 {#each item.sections as section}
-                    <div class="flex justify-between pb-2">
+                    <div class="flex justify-between pb-5">
                         <div>
                             <p class="text-size-cv-3">{section.title}</p>
                             <p class="text-size-cv-4">{section.body}</p>

@@ -6,6 +6,6 @@
     let {item}: {item: Item} = $props();
 </script>
 
-<a href={item.reference} class=" p-2 text-2xl text-blue-200 hover:bg-gray-700 hover:rounded-lg active:bg-gray-600">
+<a href={item.reference} class="p-2">
     {item.text}
 </a>

@@ -9,9 +9,6 @@ body {
 
 @custom-variant dark (&:is(.dark *));
 
-.maxad {
-    height: 100vh;
-}
 
 :root {
     --text-color: rgb(230, 230, 230);
@@ -25,8 +22,34 @@ body {
 }
 
 @theme {
+    --color-foreground-1: rgb(58, 68, 80);
+    --color-foreground-2: rgb(75, 86, 100);
     --color-background-1: rgb(45, 52, 61);
-    --color-background-2: rgb(39, 44, 50);
+    --color-background-2: rgb(36, 39, 44);
+}
+
+button, a {
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    line-height: 1.333;
+}
+
+button:hover, a:hover {
+    background-color: var(--color-foreground-1);
+}
+
+button:active, a:active {
+    background-color: var(--color-foreground-2);
+}
+
+.button-area {
+    border-radius: 0;
+    border-bottom-left-radius: 0.5rem;
+}
+
+.button-area:hover, .button-area:active {
+    background-color: var(--color-background-2);
 }
 
 @theme font-sizes {
