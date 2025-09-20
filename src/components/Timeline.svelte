@@ -29,23 +29,23 @@
 </script>
 
 <div class="pb-5">
-    <h1 class="text-cv-1">
+    <h1 class="text-size-cv-1">
         {title}
     </h1>
     <ul>
         {#each items as item}
             <li class="">
-                <h2 class="text-cv-2 pt-3">{item.title}</h2>
+                <h2 class="text-size-cv-2 pt-3">{item.title}</h2>
                 {#each item.sections as section}
                     <div class="flex justify-between pb-2">
                         <div>
-                            <p class="text-cv-3">{section.title}</p>
-                            <p class="text-cv-4">{section.body}</p>
+                            <p class="text-size-cv-3">{section.title}</p>
+                            <p class="text-size-cv-4">{section.body}</p>
                         </div>
                         <div class="flex">
-                            <p class="text-cv-3 w-(--interval-part-width) text-end">{timeString(section.interval.from)}</p>
-                            <p class="text-cv-3 ml-(--interval-dash-margin) mr-(--interval-dash-margin)"> - </p>
-                            <p class="text-cv-3 w-(--interval-part-width) text-start">{timeString(section.interval.to)}</p>
+                            <p class="text-size-cv-3 w-(--interval-part-width) text-end">{timeString(section.interval.from)}</p>
+                            <p class="text-size-cv-3 ml-(--interval-dash-margin) mr-(--interval-dash-margin)"> - </p>
+                            <p class="text-size-cv-3 w-(--interval-part-width) text-start">{timeString(section.interval.to)}</p>
                         </div>
                     </div>
                 {/each}

@@ -6,8 +6,9 @@
 </script>
 
 <div class="flex flex-col">
-    <h2 style="font-size: 7vw;" class=" m-20 mb-15 flex-auto self-center text-6xl">{mainProperties.name}</h2>
-    <div class="flex justify-evenly m-10">
+    <h2 class="text-size-large-1 m-3 text-center">{mainProperties.name}</h2>
+    <p class="text-size-large-2 w-250 text-center self-center">{mainProperties.description}</p>
+    <div class="flex justify-evenly m-10 mt-3">
         <div class="flex-1 content-center">
             <img class="rounded-full flex-1" src={mainProperties.profilePictureSource} alt={mainProperties.name}>
         </div>

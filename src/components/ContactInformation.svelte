@@ -15,10 +15,10 @@
 </script>
 
 <div class="pb-5">
-    <h2 class="text-cv-1">Contact information</h2>
+    <h2 class="text-size-cv-1">Contact information</h2>
     <div>
-        <p class="text-cv-3">{houseEmoji} {address.street} {address.houseNumber}, {address.postalCode} {address.city}</p>
-        <p class="text-cv-3">{phoneEmoji} {phoneNumer}</p>
-        <p class="text-cv-3">{emailEmoji} {emailAddress}</p>
+        <p class="text-size-cv-3">{houseEmoji} {address.street} {address.houseNumber}, {address.postalCode} {address.city}</p>
+        <p class="text-size-cv-3">{phoneEmoji} {phoneNumer}</p>
+        <p class="text-size-cv-3">{emailEmoji} {emailAddress}</p>
     </div>
 </div>

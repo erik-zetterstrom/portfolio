@@ -6,6 +6,7 @@ export type SkillCardProperties = {
 
 export type MainProperties = {
     name: string;
+    description: string;
     skillCardProperties: SkillCardProperties[];
     profilePictureSource: string;
 }

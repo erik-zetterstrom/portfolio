@@ -7,21 +7,22 @@
 
 	const mainProperties: MainProperties = {
     name: "Erik Zetterström",
+    description: "I am a curious, ambitious and knowledge thirsty software developer, cloud architecht and... more!",
     profilePictureSource: "/erikzetterstrom_selfie.png",
     skillCardProperties: [
       {
-        title: "Backendutveckling",
-        body: "Kropp 1",
+        title: "Backend Developer",
+        body: "I build solid, modular and clean code, preferably in Go or another strongly typed language.",
         imageSource: "/go_gopher.png"
       },
       {
-        title: "Molnarkitektur",
-        body: "Kropp 2",
+        title: "Cloud Architecht",
+        body: "I use Terraform or AWS CDK to spin up cost effective and secure infrastructure.",
         imageSource: "/aws.png"
       },
       {
-        title: "Annat kul",
-        body: "Kropp 3",
+        title: "Other Fun Stuff",
+        body: "I like learning new things, such as coding in Swift and front end using Svelte.",
         imageSource: "/svelte_logo.png"
       },
     ]

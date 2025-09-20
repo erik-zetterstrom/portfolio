@@ -14,14 +14,17 @@
 }
 
 .cv {
-    padding-top: 1.25rem;
-
-    width: clamp(20rem, 60vw, 60rem);
+    padding: 1.5rem;
+    width: clamp(50rem, 10vw, 60rem);
 }
 
-@theme cv {
-    --text-cv-1: clamp(1.5rem, 2.25vw, 2rem);
-    --text-cv-2: calc(0.9*var(--text-cv-1));
-    --text-cv-3: calc(0.8*var(--text-cv-1));
-    --text-cv-4: calc(0.7*var(--text-cv-1));
+@theme font-sizes {
+    --text-size-large-1: clamp(2.5rem, 6.5vw, 5rem);
+    --text-size-large-2: calc(0.4*var(--text-size-large-1));
+    --text-size-medium-1: clamp(2rem, 6vw, 4rem);
+    --text-size-medium-2: calc(0.4*var(--text-size-medium-1));
+    --text-size-cv-1: clamp(1.5rem, 2.25vw, 2rem);
+    --text-size-cv-2: calc(0.9*var(--text-size-cv-1));
+    --text-size-cv-3: calc(0.8*var(--text-size-cv-1));
+    --text-size-cv-4: calc(0.7*var(--text-size-cv-1));
 }

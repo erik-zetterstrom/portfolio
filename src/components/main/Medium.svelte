@@ -12,7 +12,10 @@
             <ProfilePicture alt={mainProperties.name}></ProfilePicture>
         </div>
 
-        <h2 style="font-size: 7cqmin;" class="flex-5 self-center text-center">{mainProperties.name}</h2>
+        <div class="flex-5 flex flex-col justify-center">
+            <h2 class="text-size-medium-1">{mainProperties.name}</h2>
+            <p class="text-size-medium-2">{mainProperties.description}</p>
+        </div>
     </div>
     <div class="flex justify-evenly m-5 mt-0">
         {#each mainProperties.skillCardProperties as currentSkillCardProperties}
