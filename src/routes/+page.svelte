@@ -13,17 +13,17 @@
       {
         title: "Backend Developer",
         body: "I build solid, modular and clean code, preferably in Go or another strongly typed language.",
-        imageSource: "/go_gopher.png"
+        imageSource: "/backend.png"
       },
       {
         title: "Cloud Architecht",
         body: "I use Terraform or AWS CDK to spin up cost effective and secure infrastructure.",
-        imageSource: "/aws.png"
+        imageSource: "/cloud.png"
       },
       {
         title: "Other Fun Stuff",
         body: "I like learning new things, such as coding in Swift and front end using Svelte.",
-        imageSource: "/svelte_logo.png"
+        imageSource: "/other.png"
       },
     ]
   };
@@ -31,7 +31,7 @@
   const medium = new MediaQuery("min-width: 768px");
 </script>
 
-<div class="flex flex-row">
+<div class="flex flex-row bg-background-1">
     <div class="flex-2">
       {#if large.current}
         <Large mainProperties={mainProperties}></Large>

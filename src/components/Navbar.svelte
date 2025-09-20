@@ -33,7 +33,7 @@
                     <div class="h-14 min-h-14 w-14 min-w-14 m-5 items-center justify-center flex">
                         <ProfilePicture alt="Liten profilbild."></ProfilePicture>
                     </div>
-                    <h2 class="text-white max-h-8 min-w-44 text-2xl">Erik Zetterström</h2>
+                    <h2 class="text-white max-h-8 min-w-58 text-2xl">Erik Zetterström</h2>
                 </div>
                 <div class="hidden md:flex justify-between">
                     {#each items as item}

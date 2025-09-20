@@ -7,7 +7,7 @@
 </script>
 
 <div class="flex flex-col">
-    <div class="flex mt-10 mb-0 ml-20 mr-20 max-h-72">
+    <div class="flex mt-10 self-center max-h-72">
         <div class="flex-2 m-5 content-center justify-center flex">
             <ProfilePicture alt={mainProperties.name}></ProfilePicture>
         </div>

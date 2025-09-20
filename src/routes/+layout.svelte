@@ -20,7 +20,7 @@
     ]
 </script>
 
-<div class=" bg-green-400 maxad">
+<div class=" bg-background-1 h-[100vh]">
     <Navbar items={navbarItems}/>
     {@render children()}
 </div>

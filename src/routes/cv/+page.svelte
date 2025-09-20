@@ -5,7 +5,7 @@
 
 </script>
 
-<div class="flex justify-center">
+<div class="flex justify-center bg-background-1">
     <div class="cv">
         <ContactInformation
             address={

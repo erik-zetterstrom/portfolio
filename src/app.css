@@ -1,5 +1,11 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+@import "@fontsource-variable/jetbrains-mono";
+
+body {
+    font-family: "JetBrains Mono Variable", monospace;
+    color: var(--text-color);
+}
 
 @custom-variant dark (&:is(.dark *));
 
@@ -8,14 +14,19 @@
 }
 
 :root {
-    --background-color: rgb(10, 73, 10);
-    --interval-part-width: clamp(5.5rem, 10vw,7.1rem);
+    --text-color: rgb(230, 230, 230);
+    --interval-part-width: clamp(5.8rem, 10vw,7.8rem);
     --interval-dash-margin: calc(0.07*var(--interval-part-width));
 }
 
 .cv {
     padding: 1.5rem;
     width: clamp(50rem, 10vw, 60rem);
+}
+
+@theme {
+    --color-background-1: rgb(45, 52, 61);
+    --color-background-2: rgb(39, 44, 50);
 }
 
 @theme font-sizes {
