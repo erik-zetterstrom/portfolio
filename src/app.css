@@ -9,17 +9,19 @@
 
 :root {
     --background-color: rgb(10, 73, 10);
-    --cv-h2-font-size: clamp(1.5rem, 2.75vw, 2rem);
-    --cv-font-size: calc(0.65*var(--cv-h2-font-size));
-    --cv-timeline-item-section-interval-part-width: 10vw;
     --interval-part-width: clamp(5.5rem, 10vw,7.1rem);
-    --interval-dash-margin: calc(0.07*var(--interval-part-width))
+    --interval-dash-margin: calc(0.07*var(--interval-part-width));
+}
+
+.cv {
+    padding-top: 1.25rem;
+
+    width: clamp(20rem, 60vw, 60rem);
 }
 
 @theme cv {
-    --text-cv-1: clamp(1.5rem, 2.75vw, 2rem);
+    --text-cv-1: clamp(1.5rem, 2.25vw, 2rem);
     --text-cv-2: calc(0.9*var(--text-cv-1));
     --text-cv-3: calc(0.8*var(--text-cv-1));
     --text-cv-4: calc(0.7*var(--text-cv-1));
-    --w-interval: 200px;
 }

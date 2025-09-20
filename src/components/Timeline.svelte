@@ -28,25 +28,25 @@
     let {title, items}: {title: string, items: TimelineItem[]} = $props();
 </script>
 
-<div class="">
+<div class="pb-5">
     <h1 class="text-cv-1">
         {title}
     </h1>
     <ul>
         {#each items as item}
             <li class="">
-                <h2 class="text-cv-2">{item.title}</h2>
+                <h2 class="text-cv-2 pt-3">{item.title}</h2>
                 {#each item.sections as section}
-                    <div>
-                        <div class="flex justify-between">
+                    <div class="flex justify-between pb-2">
+                        <div>
                             <p class="text-cv-3">{section.title}</p>
-                            <div class="flex">
-                                <p class="text-cv-3 w-(--interval-part-width) text-end">{timeString(section.interval.from)}</p>
-                                <p class="text-cv-3 ml-(--interval-dash-margin) mr-(--interval-dash-margin)"> - </p>
-                                <p class="text-cv-3 w-(--interval-part-width) text-start">{timeString(section.interval.to)}</p>
-                            </div>
+                            <p class="text-cv-4">{section.body}</p>
                         </div>
-                        <p class="text-cv-4">{section.body}</p>
+                        <div class="flex">
+                            <p class="text-cv-3 w-(--interval-part-width) text-end">{timeString(section.interval.from)}</p>
+                            <p class="text-cv-3 ml-(--interval-dash-margin) mr-(--interval-dash-margin)"> - </p>
+                            <p class="text-cv-3 w-(--interval-part-width) text-start">{timeString(section.interval.to)}</p>
+                        </div>
                     </div>
                 {/each}
             </li>
