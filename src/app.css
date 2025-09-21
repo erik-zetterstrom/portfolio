@@ -12,13 +12,13 @@ body {
 
 :root {
     --text-color: rgb(230, 230, 230);
-    --interval-part-width: clamp(5.8rem, 10vw,7.8rem);
+    --interval-part-width: clamp(8.4rem, 11vw,10.1rem);
     --interval-dash-margin: calc(0.07*var(--interval-part-width));
 }
 
 .cv {
     padding: 1.5rem;
-    width: clamp(50rem, 10vw, 60rem);
+    width: clamp(50rem, 70vw, 70rem);
 }
 
 @theme {
@@ -26,6 +26,10 @@ body {
     --color-foreground-2: rgb(75, 86, 100);
     --color-background-1: rgb(45, 52, 61);
     --color-background-2: rgb(36, 39, 44);
+    --color-gradient-pink: #ff00ff;
+    --color-gradient-orange: #FFA200;
+    --color-gradient-blue: #00F7FF;
+    --color-gradient-green: #08FF00;
 }
 
 button, a {
@@ -57,8 +61,8 @@ button:active, a:active {
     --text-size-large-2: calc(0.4*var(--text-size-large-1));
     --text-size-medium-1: clamp(2rem, 6vw, 4rem);
     --text-size-medium-2: calc(0.4*var(--text-size-medium-1));
-    --text-size-cv-1: clamp(1.5rem, 2.25vw, 2rem);
-    --text-size-cv-2: calc(0.9*var(--text-size-cv-1));
-    --text-size-cv-3: calc(0.8*var(--text-size-cv-1));
-    --text-size-cv-4: calc(0.7*var(--text-size-cv-1));
+    --text-size-cv-1: clamp(2.5rem, 3vw, 3rem);
+    --text-size-cv-2: calc(0.8*var(--text-size-cv-1));
+    --text-size-cv-3: calc(0.7*var(--text-size-cv-1));
+    --text-size-cv-4: calc(0.5*var(--text-size-cv-1));
 }

@@ -14,11 +14,11 @@
     const emailEmoji = "📧";
 </script>
 
-<div class="pb-5">
-    <h2 class="text-size-cv-1">Contact information</h2>
+<div class="pb-8">
+    <h2 class="text-size-cv-1 font-black bg-gradient-to-br from-gradient-pink to-gradient-orange bg-clip-text text-transparent">Contact Information</h2>
     <div>
-        <p class="text-size-cv-3">{houseEmoji} {address.street} {address.houseNumber}, {address.postalCode} {address.city}</p>
-        <p class="text-size-cv-3">{phoneEmoji} {phoneNumer}</p>
-        <p class="text-size-cv-3">{emailEmoji} {emailAddress}</p>
+        <p class="text-size-cv-4">{houseEmoji} {address.street} {address.houseNumber}, {address.postalCode} {address.city}</p>
+        <p class="text-size-cv-4">{phoneEmoji} {phoneNumer}</p>
+        <p class="text-size-cv-4">{emailEmoji} {emailAddress}</p>
     </div>
 </div>

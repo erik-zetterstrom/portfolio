@@ -6,7 +6,7 @@
 </script>
 
 <div class="flex flex-col">
-    <h2 class="text-size-large-1 m-3 text-center">{mainProperties.name}</h2>
+    <h2 class="text-size-large-1 m-3 text-center bg-gradient-to-br from-gradient-pink to-gradient-orange bg-clip-text text-transparent">{mainProperties.name}</h2>
     <p class="text-size-large-2 w-250 text-center self-center">{mainProperties.description}</p>
     <div class="flex justify-evenly m-10 mt-3">
         <div class="flex-1 content-center">

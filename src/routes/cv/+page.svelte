@@ -172,6 +172,7 @@
             sections={
                 [
                     {
+                        emoji: "",
                         category: "Programming Languages",
                         skills: [
                             "Python",
@@ -188,6 +189,7 @@
                         ]
                     },
                     {
+                        emoji: "",
                         category: "Cloud Providers",
                         skills: [
                             "AWS",
@@ -195,6 +197,7 @@
                         ]
                     },
                     {
+                        emoji: "",
                         category: "Frameworks and Technologies",
                         skills: [
                             "Terraform",
@@ -220,20 +223,24 @@
             sections={
                 [
                     {
-                        category: "🇸🇪 Swedish",
+                        emoji: "🇸🇪",
+                        category: "Swedish",
                         skills: ["Mother tongue"]
                     },
                     {
-                        category: "🇬🇧 English",
+                        emoji: "🇬🇧",
+                        category: "English",
                         skills: ["Fluent"]
                     }
                     ,
                     {
-                        category: "🇭🇺 Hungarian",
+                        emoji: "🇭🇺",
+                        category: "Hungarian",
                         skills: ["B1"]
                     },
                     {
-                        category: "🇪🇸 Spanish",
+                        emoji: "🇪🇸",
+                        category: "Spanish",
                         skills: ["A1"]
                     }
                 ]
