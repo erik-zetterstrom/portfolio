@@ -33,7 +33,7 @@
                     <div class="h-14 min-h-14 w-14 min-w-14 m-5 items-center justify-center flex">
                         <ProfilePicture alt="A small profile picture."></ProfilePicture>
                     </div>
-                    <h2 class="max-h-8 min-w-58 text-2xl bg-gradient-to-br from-gradient-pink to-gradient-orange bg-clip-text text-transparent">Erik Zetterström</h2>
+                    <h2 class="max-h-8 min-w-48 font-black text-xl bg-gradient-to-br from-gradient-pink to-gradient-orange bg-clip-text text-transparent">Erik Zetterström</h2>
                 </div>
                 <div class="hidden md:flex justify-between">
                     {#each items as item}

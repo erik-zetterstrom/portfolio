@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { MediaQuery } from "svelte/reactivity";
+
 
     type Time = {
         year: number;
@@ -26,6 +28,7 @@
         sections: TimeLineItemSection[];
     }
     let {title, items}: {title: string, items: TimelineItem[]} = $props();
+    const mediumOrLarger = new MediaQuery("min-width: 768px");
 </script>
 
 <div class="pb-5">
@@ -42,11 +45,20 @@
                             <p class="text-size-cv-3 font-bold">{section.title}</p>
                             <p class="text-size-cv-4">{section.body}</p>
                         </div>
-                        <div class="flex">
-                            <p class="text-size-cv-3 font-bold w-(--interval-part-width) text-end">{timeString(section.interval.from)}</p>
-                            <p class="text-size-cv-3 font-bold ml-(--interval-dash-margin) mr-(--interval-dash-margin)"> - </p>
-                            <p class="text-size-cv-3 font-bold w-(--interval-part-width) text-start">{timeString(section.interval.to)}</p>
-                        </div>
+                        {#if mediumOrLarger.current}
+                            <div class="flex">
+                                <p class="text-size-cv-3 font-bold w-(--interval-part-width) text-end">{timeString(section.interval.from)}</p>
+                                <p class="text-size-cv-3 font-bold ml-(--interval-dash-margin) mr-(--interval-dash-margin)"> - </p>
+                                <p class="text-size-cv-3 font-bold w-(--interval-part-width) text-start">{timeString(section.interval.to)}</p>
+                            </div>
+                        {:else}
+                            <div class="flex flex-col">
+                                <p class="text-size-cv-3 font-bold w-(--interval-part-width) text-center">{timeString(section.interval.to)}</p>
+                                <p class="text-size-cv-3 font-bold ml-(--interval-dash-margin) mr-(--interval-dash-margin) text-center"> - </p>
+                                <p class="text-size-cv-3 font-bold w-(--interval-part-width) text-center">{timeString(section.interval.from)}</p>
+                            </div>
+                        {/if}
+                        
                     </div>
                 {/each}
             </li>
