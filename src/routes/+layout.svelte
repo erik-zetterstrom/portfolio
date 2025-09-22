@@ -10,11 +10,11 @@
             reference: "/cv"
         },
         {
-            text: "Github",
+            text: "GitHub",
             reference: "https://github.com/erik-zetterstrom"
         },
         {
-            text: "Linkedin",
+            text: "LinkedIn",
             reference: "https://www.linkedin.com/in/erik-zetterström-7211841a1/"
         }
     ]

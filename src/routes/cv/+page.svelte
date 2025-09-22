@@ -27,7 +27,7 @@
                         title: "FrontFlow, Stockholm",
                         sections: [
                             {
-                                title: "Techlead and Cloud Architecht",
+                                title: "Tech Lead and Cloud Architecht",
                                 body: "In charge of technical decisions, managing our infrastructure in the cloud using IaC tools and developing software.",
                                 interval: {
                                     from: {
