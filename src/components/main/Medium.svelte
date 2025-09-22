@@ -13,7 +13,7 @@
         </div>
 
         <div class="flex-5 flex flex-col justify-center">
-            <h2 class="text-size-medium-1 bg-gradient-to-br from-gradient-pink to-gradient-orange bg-clip-text text-transparent">{mainProperties.name}</h2>
+            <h2 class="text-size-medium-1 font-black bg-gradient-to-br from-gradient-pink to-gradient-orange bg-clip-text text-transparent">{mainProperties.name}</h2>
             <p class="text-size-medium-2">{mainProperties.description}</p>
         </div>
     </div>
