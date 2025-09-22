@@ -8,7 +8,7 @@
         <img class="object-contain" src={skillCardProperties.imageSource} alt={"Bild till " + skillCardProperties.title} />
     </div>
     <div class="flex-1 p-3 rounded-b-xl bg-foreground-2">
-        <h2 style="font-size: 1.83cqb;" class="font-black bg-gradient-to-br from-gradient-pink to-gradient-orange bg-clip-text text-transparent">{skillCardProperties.title}</h2>
-        <p style="font-size: 1.75cqb;">{skillCardProperties.body}</p>
+        <h2 style="font-size: 1.08rem;" class="font-black bg-gradient-to-br from-gradient-pink to-gradient-orange bg-clip-text text-transparent">{skillCardProperties.title}</h2>
+        <p style="font-size: 0.9rem;">{skillCardProperties.body}</p>
     </div>
 </div>
