@@ -10,10 +10,10 @@
         <ContactInformation
             address={
                 {
-                    street: "Bagarfruvägen",
-                    houseNumber: "29",
-                    postalCode: "128 67",
-                    city: "Sköndal"
+                    street: "Ringvägen",
+                    houseNumber: "89 B",
+                    postalCode: "116 81",
+                    city: "Stockholm"
                 }
             }
             phoneNumer="+4673 518 41 92"
