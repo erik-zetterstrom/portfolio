@@ -12,7 +12,7 @@
                 {
                     street: "Ringvägen",
                     houseNumber: "89 B",
-                    postalCode: "116 81",
+                    postalCode: "118 61",
                     city: "Stockholm"
                 }
             }
